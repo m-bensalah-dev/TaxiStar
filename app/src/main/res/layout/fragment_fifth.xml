@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true"
+    tools:context=".FifthFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Settings"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <!-- Profile Photo -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/ivProfilePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_person_placeholder"
+                    android:background="@color/grey"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Driver Name -->
+            <TextView
+                android:id="@+id/tvDriverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver Name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+        <!-- Menu Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:paddingVertical="8dp">
+
+            <!-- Update User Profile -->
+            <LinearLayout
+                android:id="@+id/menuUpdateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/yellowprofile"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Update User Profile"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:rotation="270"
+                    app:tint="@color/grey"/>
+
+            </LinearLayout>
+
+            <!-- Notification -->
+            <LinearLayout
+                android:id="@+id/menuNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/yellownotification"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notification"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Menu Items 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:paddingVertical="8dp">
+
+            <!-- Invoices -->
+            <LinearLayout
+                android:id="@+id/menuInvoices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/invoice"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Invoices"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:rotation="270"
+                    app:tint="@color/grey"/>
+
+            </LinearLayout>
+
+            <!-- Historique -->
+            <LinearLayout
+                android:id="@+id/menuHistorique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/yellowhistorique"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Historique"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:rotation="270"
+                    app:tint="@color/grey"/>
+
+            </LinearLayout>
+
+            <!-- Notification Management -->
+            <LinearLayout
+                android:id="@+id/menuNotificationManagement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/yellowbill"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notification Management"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:rotation="270"
+                    app:tint="@color/grey"/>
+
+            </LinearLayout>
+
+            <!-- About Me -->
+            <LinearLayout
+                android:id="@+id/menuAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="About me"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:rotation="270"
+                    app:tint="@color/grey"/>
+
+            </LinearLayout>
+
+            <!-- Language -->
+            <LinearLayout
+                android:id="@+id/menuLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/yellowlangue"
+                    app:tint="#FFC107"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Language"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="16dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:rotation="270"
+                    app:tint="@color/grey"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Exit Button -->
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="24dp"
+            android:text="Exit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#FFC107"
+            android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+            android:drawableTint="@android:color/white"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            app:cornerRadius="30dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

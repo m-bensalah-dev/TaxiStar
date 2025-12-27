@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FirstFragment">
+
+    <!-- Top 50%: Google Maps with My Location Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Custom My Location Button - Bottom Left -->
+        <ImageButton
+            android:id="@+id/myLocationButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="16dp"
+            android:src="@drawable/find"
+            android:scaleType="centerInside"
+            android:background="@drawable/circular_location_button"
+            android:padding="12dp"
+            android:contentDescription="My Location"
+            android:elevation="6dp" />
+
+    </FrameLayout>
+
+    <!-- Bottom 50%: Info + buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top of bottom half: 3 info blocks -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <!-- Distance block -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/distance"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segment1"
+                    android:text="0.0"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="36sp"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+            <!-- Price block (CENTERED AND BIGGER) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/tvFare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segment1"
+                    android:text="0.0"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/tvCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAD"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primaryColor"/>
+            </LinearLayout>
+
+            <!-- Time block -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/time"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segment1"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="36sp"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sec"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Country and Day/Night info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morocco"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:textSize="14sp"
+                android:layout_marginHorizontal="4dp"/>
+
+            <TextView
+                android:id="@+id/tvDayNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day Rate"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_orange_dark"/>
+
+        </LinearLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- Two Horizontal Buttons: Start and Stop -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Start Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/startButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/start_button_bg_rect"
+                android:text="Start"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/kenia"
+                android:textStyle="bold"
+                android:elevation="4dp"/>
+
+            <!-- Stop Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stopButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/stop_button_bg_rect"
+                android:text="Stop"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/kenia"
+                android:textStyle="bold"
+                android:elevation="4dp"
+                android:enabled="false"
+                android:alpha="0.5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

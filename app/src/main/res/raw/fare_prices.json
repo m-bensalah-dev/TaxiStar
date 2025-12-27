@@ -1,0 +1,88 @@
+{
+  "countries": [
+    {
+      "name": "Morocco",
+      "currency": "MAD",
+      "coordinates": {"latitude": 31.7917, "longitude": -7.0926},
+      "day": {"start": "06:00", "end": "22:00", "baseFare": 1.5, "pricePerKm": 3, "pricePerMinute": 1},
+      "night": {"start": "22:00", "end": "06:00", "baseFare": 2.5, "pricePerKm": 4, "pricePerMinute": 1.2}
+    },
+    {
+      "name": "United States",
+      "currency": "USD",
+      "coordinates": {"latitude": 37.0902, "longitude": -95.7129},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 3.0, "pricePerKm": 1.5, "pricePerMinute": 0.3},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.5, "pricePerKm": 2.0, "pricePerMinute": 0.4}
+    },
+    {
+      "name": "Canada",
+      "currency": "CAD",
+      "coordinates": {"latitude": 56.1304, "longitude": -106.3468},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 3.0, "pricePerKm": 1.6, "pricePerMinute": 0.3},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.5, "pricePerKm": 2.1, "pricePerMinute": 0.4}
+    },
+    {
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "coordinates": {"latitude": 55.3781, "longitude": -3.4360},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 2.5, "pricePerKm": 1.4, "pricePerMinute": 0.3},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.0, "pricePerKm": 1.8, "pricePerMinute": 0.4}
+    },
+    {
+      "name": "Germany",
+      "currency": "EUR",
+      "coordinates": {"latitude": 51.1657, "longitude": 10.4515},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 3.0, "pricePerKm": 1.5, "pricePerMinute": 0.35},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.5, "pricePerKm": 2.0, "pricePerMinute": 0.45}
+    },
+    {
+      "name": "France",
+      "currency": "EUR",
+      "coordinates": {"latitude": 46.2276, "longitude": 2.2137},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 3.0, "pricePerKm": 1.6, "pricePerMinute": 0.35},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.5, "pricePerKm": 2.0, "pricePerMinute": 0.45}
+    },
+    {
+      "name": "Spain",
+      "currency": "EUR",
+      "coordinates": {"latitude": 40.4637, "longitude": -3.7492},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 2.5, "pricePerKm": 1.5, "pricePerMinute": 0.3},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.0, "pricePerKm": 2.0, "pricePerMinute": 0.4}
+    },
+    {
+      "name": "Italy",
+      "currency": "EUR",
+      "coordinates": {"latitude": 41.8719, "longitude": 12.5674},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 2.5, "pricePerKm": 1.5, "pricePerMinute": 0.35},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.0, "pricePerKm": 2.0, "pricePerMinute": 0.45}
+    },
+    {
+      "name": "Australia",
+      "currency": "AUD",
+      "coordinates": {"latitude": -25.2744, "longitude": 133.7751},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 3.0, "pricePerKm": 1.6, "pricePerMinute": 0.35},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.5, "pricePerKm": 2.1, "pricePerMinute": 0.45}
+    },
+    {
+      "name": "Japan",
+      "currency": "JPY",
+      "coordinates": {"latitude": 36.2048, "longitude": 138.2529},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 300, "pricePerKm": 150, "pricePerMinute": 30},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 350, "pricePerKm": 200, "pricePerMinute": 40}
+    },
+    {
+      "name": "Brazil",
+      "currency": "BRL",
+      "coordinates": {"latitude": -14.2350, "longitude": -51.9253},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 3.0, "pricePerKm": 1.5, "pricePerMinute": 0.3},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 3.5, "pricePerKm": 2.0, "pricePerMinute": 0.4}
+    },
+    {
+      "name": "India",
+      "currency": "INR",
+      "coordinates": {"latitude": 20.5937, "longitude": 78.9629},
+      "day": {"start": "06:00", "end": "21:00", "baseFare": 50, "pricePerKm": 20, "pricePerMinute": 5},
+      "night": {"start": "21:00", "end": "06:00", "baseFare": 60, "pricePerKm": 25, "pricePerMinute": 6}
+    }
+  ]
+}
